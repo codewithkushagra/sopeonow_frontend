@@ -43,7 +43,7 @@ class App extends React.Component {
           <div className='mt-[5%] mx-[7.5%] lg:mx-15'>
             <UserCard user={this.state.user.user_data}/>
           </div>
-          <div className='m-[6%] grid md:grid-cols-4 place-items-center sm:grid-cols-1 '>
+          <div className='mx-[6%] my-[3%] grid md:grid-cols-4 place-items-center sm:grid-cols-2 '>
             <Card title={'Ward'} onClick={() => this.handleClick('ward')} buttonColor={'bg-blue-300'}/>
             <Card title={'Room'} onDoubleClick={this.onDoubleClickHandler} buttonColor={'bg-pink-200'}/>
             <Card title={'Bed ID'} onClick={() => this.handleClick('bedid')} buttonColor={this.state.buttonColor?'bg-yellow-200':'bg-red-200'} />
